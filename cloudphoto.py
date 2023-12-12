@@ -82,10 +82,6 @@ if not args.command == 'init':
         sys.exit(1)
 
 
-
-
-
-
 # init
 if args.command == 'init':
   init_bucket = input('Enter your bucket name:')
@@ -303,7 +299,6 @@ if args.command == 'mksite':
     # Заполним объект HTML странице. Обязательно укажем, что объект имеет тип 'text/html'.
     html_photos.put(Body=html_photos_content, ContentType='text/html')
     count += 1
-
 
 
   # exit()
