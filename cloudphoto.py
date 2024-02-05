@@ -62,8 +62,6 @@ mksite = subparser.add_parser('mksite',
                     help='create site with albums')
 delete.add_argument('album_name')
 upload.add_argument('--album', type=str, required=True)
-upload.add_argument('--path', type=str, default=".", required=False)
-download.add_argument('--album', type=str, required=True)
 download.add_argument('--path', type=str, default=".", required=False)     
 args = parser.parse_args()
 
